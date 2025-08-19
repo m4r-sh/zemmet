@@ -1,0 +1,10 @@
+{
+  "version": "0.0.1",
+  "name": "zemmet",
+  "dependencies": {
+    "emmet": "^2.4.11"
+  },
+  "exports": {
+    ".": "./src/index.js"
+  }
+}
