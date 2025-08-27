@@ -1,10 +1,24 @@
 {
   "version": "0.0.1",
   "name": "zemmet",
+  "description": "fork of emmet for zilk projects",
+  "author": {
+    "name": "m4rsh",
+    "email": "me@m4r.sh",
+    "url": "https://m4r.sh"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/m4r-sh/zemmet.git"
+  },
+  "scripts": {
+    "build": "bun build --outfile dist/index.js --packages=external --minify ./src/index.js"
+  },
+  "type": "module",
+  "exports": {
+    ".": "./dist/index.js"
+  },
   "dependencies": {
     "emmet": "^2.4.11"
-  },
-  "exports": {
-    ".": "./src/index.js"
   }
 }
